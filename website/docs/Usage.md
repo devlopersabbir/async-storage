@@ -76,6 +76,17 @@ const getData = async () => {
 
 ```
 
+### Removing storage item with key
+```tsx
+const removeItem = async (key: string) => {
+    try {
+      await AsyncStorage.removeItem(key);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+```
+
 
 ### More
 
